@@ -20,35 +20,35 @@ const books = [
         id: 'book3',
         title: 'Гарри Поттер и Орден феникса',
         description: 'Гарри Поттеру предстоит сражаться с силами Темного Лорда и вступить в Орден Феникса.',
-        image: '../img/book3.webp',
+        image: 'img/book3.webp',
         url:'https://drive.google.com/file/d/1LLldAuz1TkiQ-ORHGzNKGrOmrh5sxNcy/view?usp=drive_link'
     },
     {
         id: 'book4',
         title: 'Гарри Поттер и Принц Полукровка',
         description: 'Гарри Поттеру предстоит сражаться с темными силами, вступить в борьбу с темным лордом Волан-де-Мортом.',
-        image: '../img/book4.webp',
+        image: 'img/book4.webp',
         url:'https://drive.google.com/file/d/1udNTUOOvpAxWgMR_XWRQnF4ThiBXEn_z/view?usp=drive_link'
     },
     {
         id: 'book5',
         title: 'Гарри Поттер и Дары Смерти',
         description: 'Гарри Поттеру и его друзьям предстоит сражаться против Волан-де-Морта и его смертельных приверженцев.',
-        image: '../img/book5.webp',
+        image: 'img/book5.webp',
         url:'https://drive.google.com/file/d/1aCrbJLEJaCjMts5wFDxSqALDIiemPFl2/view?usp=drive_link',
     },
     {
         id: 'book6',
         title: 'Гарри Поттер и узник Азбакана',
         description: '«Узник Азкабана» предлагает захватывающий сюжет, полный поворотов и неожиданных открытий.',
-        image: '../img/book6.webp',
+        image: 'img/book6.webp',
         url:'https://drive.google.com/file/d/1ntTLD1TRz7BCtcSmzPCjoueKLjnVol70/view?usp=drive_link'
     },
     {
         id: 'book7',
         title: 'Гарри Поттер: История волшебства',
         description: 'История волшебства" раскрывает тайны, загадки и факты о жизни Гарри и его друзей.',
-        image: '../img/garry_books.jpg',
+        image: 'img/garry_books.jpg',
         url:'https://drive.google.com/file/d/1LLldAuz1TkiQ-ORHGzNKGrOmrh5sxNcy/view?usp=drive_link'
     },
 ];
