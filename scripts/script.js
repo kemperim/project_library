@@ -7,14 +7,14 @@ const books = [
         id: 'book1',
         title: 'Гарри Поттер и Кубок Огня',
         description: 'Гарри Поттеру предстоит соревноваться в Турнире Трёх Волшебников',
-        image: '../img/book1.webp',
+        image: 'img/book1.webp',
         url:'https://drive.google.com/file/d/1n6_SE5Ivv0UQ6iLR8L4_-4mBtNUSg1Th/view?usp=drive_link',
     },
     {
         id: 'book2',
         title: 'Гарри Поттер и Философский Камень',
         description: 'Гарри Поттеру предстоит познакомиться с миром волшебства и столкнуться с темными силами.',
-        image: '../img/book2.webp',
+        image: 'img/book2.webp',
         url:'https://drive.google.com/file/d/1DXfsGTRQwNyXqRQ2Isao66Pdm4a8W2aL/view?usp=drive_link',
     },{
         id: 'book3',
