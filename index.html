@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index_style.css">
+    <title>Главная страница</title>
+
+</head>
+
+<body>
+
+    <header class='header'>
+        <img src="img/logo.png" alt="logo" class="logo">
+        <nav class='nav'>
+            <ul class='navList'>
+                <li class='navItem'>
+                    <a class='navLink' href="index.html">
+                        Главная
+                    </a>
+                </li>
+                <li class='navItem'>
+                    <a class='navLink' href="about.html">
+                        О нас
+                    </a>
+                </li>
+                <li class='navItem'>
+                    <a class='navLink' href="books.html">
+                        Книги
+                    </a>
+                </li>
+                <li class='navItem'>
+                    <a class='navLink' href="korzina.html">
+                        Корзина
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class=searchBox>
+            <input type="text" placeholder="Поиск по сайту" class='searchInput' />
+            <button type="button" class='searchButton'>
+                Найти
+            </button>
+        </div>
+    </header>
+    <div class='container_title'>
+        <div class='h1_container'>
+            <h1 class='h1'> БОЛЬШОЙ ВЫБОР КНИГ ДЛЯ ЧИТАТЕЛЕЙ ВСЕХ ВОЗРАСТОВ</h1>
+        </div>
+        <div>
+            <button class='button_popup'>Найти книгу для себя</button>
+        </div>
+    </div>
+    <div class='popular_book'>
+        <h2 class='title_popular_book'> Самая популярная книга в этом месяце</h2>
+        <h3 class='title_h3_popular_book'>Рассказываем о том какая книга сейчас пользуется спросом у
+            читателей</h3>
+        <div class='content_popular_book'>
+            <img src="img/garry_books.jpg" class='content'></img>
+            <div class='content'>
+                <h3> Дж.К. Роулинг,Бен Дэвисон. Гарри Поттер: История волшебства</h3>
+                <p>Самая популярная книга этого месяца - "Гарри Поттер: История волшебства"!
+                    В этой уникальной книге авторы Дж.К. Роулинг и Бен Дэвисон предлагают вам глубокий
+                    исследовательский погружение в мир Гарри Поттера.
+                </p>
+                <p>"История волшебства" раскрывает тайны, загадки и факты о жизни Гарри и его друзей, создавая самое
+                    полное представление о волшебной вселенной, которую мы так любим.</p>
+                <button class='button'>
+                    Посмотреть другие книги
+                </button>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2023 Онлайн Библиотека</p>
+        </footer>
+    </div>
+    <div class='popup-overlay' onClick={onClose}>
+        <div class='popup-container'>
+            <div class="contanier">
+                <div class='popup-content'>
+                    <h2 class=title>Оставить заявку</h2>
+                    <form class='form' onSubmit={handleSubmit}>
+                        <label class='label'>
+                            Имя:
+                            <input type="text" />
+                        </label>
+                        <label class='label'>
+                            Номер телефона:
+                            <input type="tel" />
+                        </label>
+                        <label class='label'>
+                            Email:
+                            <input type="email" />
+                        </label>
+                        <label class='label'>
+                            Название интересующей вас книги:
+                            <input type="text" />
+                        </label>
+                        <button type="submit" class='button'>
+                            Оставить заявку
+                        </button>
+                    </form>
+                    <button class='button_close' onClick={closeModal}>Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const button = document.querySelector('.button_popup');
+        const overlay = document.querySelector('.popup-overlay');
+        const closeButton = document.querySelector('.button_close');
+        button.addEventListener('click', () => {
+            // Показать модальное окно
+            const popup = document.querySelector('.popup-container');
+            popup.style.display = 'block';
+            overlay.style.display = 'block'
+        });
+        function closeModal(popup, overlay) {
+            popup.style.display = 'none';
+            overlay.style.display = 'none';
+        }
+        closeButton.addEventListener('click', () => {
+         
+            const popup = document.querySelector('.popup-container');
+            const overlay = document.querySelector('.popup-overlay');
+            closeModal(popup, overlay)
+        });
+        const linkButton = document.querySelector('.button');
+        linkButton.addEventListener('click', () => {
+
+            window.location.href = 'books.html';
+        });
+    </script>
+
+
+</body>
+
+</html>

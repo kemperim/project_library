@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин</title>
+    <link rel="stylesheet" href="styles/index_style.css">
+    
+</head>
+<body>
+    <header class='header'>
+        <img src="img/logo.png" alt="logo" class="logo">
+        <nav class='nav'>
+            <ul class='navList'>
+                <li class='navItem'>
+                    <a class='navLink' href="index.html">
+                        Главная
+                    </a>
+                </li>
+                <li class='navItem'>
+                    <a class='navLink' href="about.html">
+                        О нас
+                    </a>
+                </li>
+                <li class='navItem'>
+                    <a class='navLink' href="books.html">
+                        Книги
+                    </a>
+                </li>
+                <li class='navItem'>
+                    <a class='navLink' href="korzina.html">
+                        Корзина
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class=searchBox>
+            <input type="text" placeholder="Поиск по сайту" class='searchInput' />
+            <button type="button" class='searchButton'>
+                Найти
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="cart" id="cart">
+            <h2>Корзина</h2>
+            <div id="cart-content" class="cart-content">
+                <p>Нет выбранных книг.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2023 Онлайн Библиотека</p>
+    </footer>
+</body>
+</html>
